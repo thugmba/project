@@ -7,44 +7,37 @@
 <!--
  /* Font Definitions */
  @font-face
-	{font-family:PMingLiU;
-	panose-1:2 1 6 1 0 1 1 1 1 1;}
-@font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
-	{font-family:Aptos;}
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
 @font-face
-	{font-family:Menlo;}
-@font-face
-	{font-family:"\@PMingLiU";
-	panose-1:2 1 6 1 0 1 1 1 1 1;}
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0in;
 	margin-right:0in;
 	margin-bottom:8.0pt;
 	margin-left:0in;
-	line-height:115%;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	text-align:center;
 	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
-	margin:0in;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-.MsoChpDefault
-	{font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
+	font-family:"Times New Roman",serif;}
 .MsoPapDefault
 	{margin-bottom:8.0pt;
-	line-height:115%;}
+	line-height:107%;}
  /* Page Definitions */
  @page WordSection1
-	{size:595.0pt 842.0pt;
+	{size:595.3pt 841.9pt;
 	margin:1.0in 1.0in 1.0in 1.0in;}
 div.WordSection1
 	{page:WordSection1;}
@@ -57,118 +50,332 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'>Exploring
-Titanic Dataset with Pandas</span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt;line-height:107%'>Title</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>1.
-Import the Required Libraries</span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:107%'>Student ID: ___________ Name (English):
+________________Name (Chinese): ________</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>You should
-import Pandas (import pandas as pd) and Matplotlib (import matplotlib.pyplot as
-plt) for data manipulation and visualization.</span></p>
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;line-height:13.5pt;background:white'><span
-style='font-size:9.0pt;font-family:Menlo;color:#AF00DB'>import</span><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'> </span><span
-style='font-size:9.0pt;font-family:Menlo;color:#267F99'>pandas</span><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'> </span><span
-style='font-size:9.0pt;font-family:Menlo;color:#AF00DB'>as</span><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'> </span><span
-style='font-size:9.0pt;font-family:Menlo;color:#267F99'>pd</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>1. Introduction</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>            The 2030 Agenda for
+Sustainable Development, adopted by all United Nations Member States in 2015,
+provides a shared blueprint for peace and prosperity for people and the planet,
+now and into the future. At its heart are the 17 Sustainable Development Goals
+(SDGs), which are an urgent call for action by all developed and developing
+countries in a global partnership. </span></p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>2. Load
-the Dataset</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>            The 2030 Agenda for
+Sustainable Development, adopted by all United Nations Member States in 2015,
+provides a shared blueprint for peace and prosperity for people and the planet,
+now and into the future. At its heart are the 17 Sustainable Development Goals
+(SDGs), which are an urgent call for action by all developed and developing
+countries in a global partnership.</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Load the
-Titanic dataset from a CSV file named 'titanic.csv' into a Pandas DataFrame.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal style='margin-bottom:0in;line-height:13.5pt;background:white'><span
-style='font-size:9.0pt;font-family:Menlo;color:#3B3B3B'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>2. Data and Methods</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>            They recognize that
+ending poverty and other deprivations must go hand-in-hand with strategies that
+improve health and education, reduce inequality, and spur economic growth – all
+while tackling climate change and working to preserve our oceans and forests. </span>Table
+1<span style='font-size:12.0pt;line-height:107%'> presents the raw data of
+incoming traffic to Tunghai University.</span></p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>3. Data
-Exploration</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Display
-the first few rows of the dataset to understand its structure.</span></p>
+<p class=MsoCaption style='page-break-after:avoid'><a name="_Ref161731955">Table
+1</a> Traffic statistics in Tunghai University</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=120 valign=top style='width:90.15pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=120 valign=top style='width:90.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph;line-height:normal'><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Print
-information about the columns and their data types.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>3. Results</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Show summary
-statistics for numerical columns (e.g., mean, min, max, etc.).</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>            As </span>Figure 1<span style='font-size:12.0pt;line-height:107%'> shows, the most popular term
+in 2021 is ‘app.’ The 2030 Agenda for Sustainable Development, adopted by all
+United Nations Member States in 2015, provides a shared blueprint for peace and
+prosperity for people and the planet, now and into the future. At its heart are
+the 17 Sustainable Development Goals (SDGs), which are an urgent call for
+action by all developed and developing countries in a global partnership.</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>4. Data
-Cleaning</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>The 2030 Agenda for Sustainable
+Development, adopted by all United Nations Member States in 2015, provides a
+shared blueprint for peace and prosperity for people and the planet, now and
+into the future. At its heart are the 17 Sustainable Development Goals (SDGs),
+which are an urgent call for action by all developed and developing countries
+in a global partnership.</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Identify
-and handle missing values in the dataset (e.g., fill missing age values with
-median).</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='font-size:12.0pt;line-height:107%'><img width=397 height=371
+id="Picture 1" src="Assignment_Template(4)_files/image001.png"></span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Perform
-any necessary data transformations or cleaning steps.</span></p>
+<p class=MsoCaption><a name="_Ref161731672">Figure 1</a> The most popular terms
+in the research</p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
 
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>5. Data
-Analysis</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>4. Conclusion</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Calculate
-and display the count of passengers by gender.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>            The 2030 Agenda for
+Sustainable Development, adopted by all United Nations Member States in 2015,
+provides a shared blueprint for peace and prosperity for people and the planet,
+now and into the future. At its heart are the 17 Sustainable Development Goals
+(SDGs), which are an urgent call for action by all developed and developing
+countries in a global partnership. </span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;line-height:107%'>            The 2030 Agenda for
+Sustainable Development, adopted by all United Nations Member States in 2015,
+provides a shared blueprint for peace and prosperity for people and the planet,
+now and into the future. At its heart are the 17 Sustainable Development Goals
+(SDGs), which are an urgent call for action by all developed and developing
+countries in a global partnership.</span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Compute
-the average age of passengers.</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Determine
-the survival rate by passenger class.</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>6. Data
-Visualization</span></b></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Create a
-bar chart to visualize the survival rate by passenger class.</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Add appropriate
-labels and a title to the chart.</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><b><span style='font-family:"Times New Roman",serif'>7.
-Conclusion</span></b></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Summarize
-your findings or insights gained from analyzing the Titanic dataset.</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Reflect on
-the importance of data cleaning and exploration in data analysis.</span></p>
-
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+<p class=MsoNormal>&nbsp;</p>
 
 </div>
 
